@@ -29,12 +29,28 @@ function hash(str) {
 function signup() {
     const userId = document.getElementById("signup-inputID").value;
     const email = document.getElementById("signup-inputEmail").value;
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
     const password = document.getElementById("signup-inputPassword").value;
     const cpass = document.getElementById("inputPasswordConfirm").value;
 
-    if (userId == "" || email == "" || password == "") {
+    if (userId == "" || email == "" || password == "" ) {
         const node = document.getElementById("signup-fail");
         node.innerHTML = "Blank fields not accepted.";
+        return;
+    }
+    if(!validateEmail(email))
+    {
+        const node = document.getElementById("signup-fail");
+        node.innerHTML = "Please give correct Email id.";
+        return;
+    }
+    if(password.length<10)
+    {
+        const node = document.getElementById("signup-fail");
+        node.innerHTML = "Please choose a strong password";
         return;
     }
 
