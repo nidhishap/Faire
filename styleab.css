@@ -1,0 +1,161 @@
+
+body
+{
+    margin:0;
+    text-align: center;
+    font-family:'Roboto Slab', serif;
+   /* font-size: 200%;*/
+
+}
+
+h1
+{
+    font-size: 500%;
+    margin: 50px auto 0 auto;
+    font-family: 'Roboto Slab', serif;
+    color: #66BFBF;
+
+}
+h2
+{
+    font-family:'Lobster', cursive;
+    color: #66BFBF;
+    font-weight: normal;
+    padding: 10px;
+}
+hr
+{
+    border: dotted #b0e6e6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 10px auto;
+    /*color: ;*/
+}
+h3
+{
+    color: #11999E;
+    margin-top: 0;
+}
+.top-container
+{
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 20px;
+}
+.middle-container
+{
+    margin: 100px 0;
+}
+.bottom-container
+{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+}
+a
+{
+    color: #11999E;
+    font-family:'Bodoni Moda', serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 120%;
+}
+a:hover
+{
+    color: #b0e6e6;
+}
+p
+{
+    line-height: 2;
+}
+.pget
+{
+    padding-bottom: 10%;
+    font-size: 0.2in;
+}
+.intro
+{
+    width: 30%;
+    margin: auto;
+}
+.pro
+{
+    text-decoration: underline;
+}
+.top-cloud
+{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.bottom-cloud
+{
+    position: absloute;
+    right: 100px;
+    margin-bottom: 300px;
+}
+.skill-row
+{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.code-img
+{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.code-imgc
+{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+.contact-me
+{
+    width: 40%;
+    margin: 40px auto 60px;
+}
+.btn {
+    background: #34d9d9;
+    background-image: -webkit-linear-gradient(top, #34d9d9, #2b7db8);
+    background-image: -moz-linear-gradient(top, #34d9d9, #2b7db8);
+    background-image: -ms-linear-gradient(top, #34d9d9, #2b7db8);
+    background-image: -o-linear-gradient(top, #34d9d9, #2b7db8);
+    background-image: linear-gradient(to bottom, #34d9d9, #2b7db8);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 18px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #5bdecf;
+    background-image: -webkit-linear-gradient(top, #5bdecf, #2594c4);
+    background-image: -moz-linear-gradient(top, #5bdecf, #2594c4);
+    background-image: -ms-linear-gradient(top, #5bdecf, #2594c4);
+    background-image: -o-linear-gradient(top, #5bdecf, #2594c4);
+    background-image: linear-gradient(to bottom, #5bdecf, #2594c4);
+    text-decoration: none;
+  }
+  .copyright
+  {
+      color: #E4F9F5;
+      font-size: 0.75em;
+      padding: 20px 0px;
+  }
+
+  .todoPhoto {
+    width: 2in;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*<img src="https://previews.123rf.com/images/dstarky/dstarky1701/dstarky170100440/69262805-to-do-icon-or-logo-line-art-style-vector-illustration-.jpg" alt="" class="todoPhoto">*/

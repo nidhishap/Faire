@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Faire</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <!-- Firebase -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <!-- Local Scripts -->
+  <script src="index.js" defer></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: rgb(243, 226, 226);">
+  <div id="signupmenu" >
+    <div>
+      <img src="https://i.pinimg.com/originals/ab/a8/d1/aba8d1f9c8b2f836ac4f186533c834b7.png">
+  </div>
+  <div class="row">
+    <div style="position: absolute; left: 13in; top: 1.5in;">
+        <p style="font-size: 1in; text-align: center;">Today Is The Day<br>You Start<br>The Hustle.</p>
+    </div>
+</div>
+    <div class="container">
+      <div class="row">
+        <div style="position: absolute; top: 10px; left: 700px; width: 500px; color: white;">
+          <div class="card card-signin my-5 shadow">
+            <div class="card-body" style="background-color: rgb(83, 83, 83); border-radius: 7px;">
+              <h1 class="card-title text-center">Faire</h1>
+              <h6 class="text-center">
+                Fast. Secure. Clean.
+              </h6>
+
+              <br />
+
+              <form class="form-signin">
+                <div class="form-label-group">
+                  <input type="text" id="signup-inputID" class="form-control" placeholder="@userId" required
+                    autofocus />
+                  <label for="signup-inputId" style="font-size: large">Username</label>
+                </div>
+                <div class="form-label-group">
+                  <input type="email" id="signup-inputEmail" class="form-control" placeholder="abc@example.com" required
+                    autofocus />
+                  <label for="signup-inputEmail" style="font-size: large">Email</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="signup-inputPassword" class="form-control" placeholder="Password"
+                    required />
+                  <label for="signup-inputPassword" style="font-size: large">Password</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPasswordConfirm" class="form-control" placeholder="Confirm Password"
+                    required />
+                  <label for="inputPasswordConfirm" style="font-size: large">Confirm Password</label>
+                </div>
+
+                <br />
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2" />
+                  <label class="custom-control-label" for="customCheck2">I agree to Faire Terms &
+                    Conditions</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="signup-button">
+                  Create Account
+                </button>
+
+                <br />
+                <p class="text-center text-danger" id="signup-fail"></p>
+
+                <hr class="my-4" />
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn text-muted" data-toggle="modal" data-target="#myModal">
+                  Your credentials are safe with us. Click
+                  here to know more about our storage
+                  policies.
+                </button>
+
+                <br />
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">
+                          Storage Policy
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="text-muted bold">
+                          Faire is a non-profit
+                          organisation. We will
+                          never share your email
+                          address with anyone
+                          else. Email is only used
+                          to validate a user.
+                          <br />
+                          We only store password
+                          hashes in our database.
+                          <br />
+                          Faire stores all tasks
+                          sent by its users in its
+                          database however access
+                          is strictly controlled.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <p>Already a member?</p>
+                <button class="btn btn-primary text-uppercase" type="button" >
+                  <a href="index.html" class="login-link" style="color: white;">Login</a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

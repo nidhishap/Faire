@@ -1,0 +1,192 @@
+#loginmenu {
+    /* border: 1px black solid; */
+    margin: 0px;
+    height: 15vh;
+  }
+  #inbox {
+    border-radius: 15px;
+    height: 75vh;
+  }
+  #interface {
+    visibility: hidden;
+  }
+  #header {
+    /* margin-left: 20px; */
+    /* margin: 20px; */
+    height: 15vh;
+    /* border: 1px solid; */
+    padding: 15px;
+  }
+  #right {
+    color: darkcyan;
+    text-align: right;
+    padding-right: 5vw;
+  }
+  #left {
+    color: lightseagreen;
+    padding-left: 5vw;
+  }
+  
+  #center {
+    width: 100%;
+    padding: 2%;
+    /* border: 1px solid black; */
+    text-align: center;
+    /* height: 100%; */
+  }
+  
+  #live_mssg {
+    width: 35vw;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  .css-sm {
+    font-size: small;
+  }
+  #newuser {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #sendrec {
+    /* border-bottom: 2px solid rgb(91, 192, 222); */
+    height: 10vh;
+    margin-top: 0px;
+  }
+  
+  #inbox-1 {
+    height: 15%;
+  }
+  
+  #inbox-2 {
+    height: 65%;
+    overflow-y: scroll;
+  }
+  
+  #inbox-3 {
+    height: 5%;
+  }
+  
+  #sending-utility {
+    height: 10%;
+  }
+  
+  .vh-75 {
+    height: 70vh;
+    /* border: solid 1px black; */
+  }
+  
+  .col-4 .contact-scroll {
+    overflow-y: scroll;
+    height: 40vh;
+  }
+  
+  .col-12 .contact-scroll {
+    overflow-y: scroll;
+    height: 60vh;
+  }
+  
+  .contact-width {
+    width: 100%;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    color: white;
+  }
+  .login-link:hover {
+    text-decoration: none;
+    color: white;
+  }
+  .shadow {
+    box-shadow: 0px 0px 10px 0px #000;
+  }
+  
+  .border2 {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  /* RESPONSIVE */
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    /* margin-left: 50px; */
+  }
+  
+  /* scrollbars */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  * { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: cursive; 
+  } 
+    
+  body { 
+    background: #f2f2f2; 
+    overflow: auto; 
+  } 
+    
+  h1{ 
+     text-align: center; 
+     margin: 5%; 
+     font-size: 3rem; 
+     text-decoration: underline; 
+  } 
+    
+  ul { 
+    text-align: lleft; 
+    padding-left: 10%; 
+    padding: 7%; 
+    font-size: 2rem; 
+    list-style: circle; 
+  } 
+    
+  li:hover{ 
+    color:red; 
+    margin: 4%; 
+    transition: 1.5s ease; 
+    cursor: pointer; 
+  } 
+  .Delete
+  {
+    margin-left: 100px;
+  }
+  
